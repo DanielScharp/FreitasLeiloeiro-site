@@ -1,9 +1,13 @@
 :root {
-    --white: #fff;
+    --white: #f2f2f2;
     --gray: #9e9e9e;
     --cyan: #1b90ad;
+    --dark-cyan: #2D5568;
     --dark-blue: #001236;
+    --dark-blue-hover: #112246;
     --cyan-hover: #64b2c5;
+    --yellow: #DFB025;
+    
 }
 
 * {
@@ -12,3 +16,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 87%;
+    }
+}
+
+/*
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima —  telas muito grandes, TVs
+*/

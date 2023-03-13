@@ -57,7 +57,9 @@
         </a>
     </nav>
     <section tabindex="0" class="content" onfocus="closeSidebar()" id="content">
-       <img class="header-banner" src="./images/Banner.jpg" />
+        <div class="header-banner" >
+            <img src="./images/Banner.jpg" />
+        </div>
        <div class="search-field">
             <div class="search-field-link">
                 <a class="select">Veículos</a>
@@ -65,14 +67,16 @@
                 <a>Materiais</a>
             </div>
             <div class="search-field-form">
-                <div>
+                <div class="search-field-form-input">
                     <input type="text" placeholder="DIGITE A MARCA OU MODELO DO VEÍCULO">
                 </div>
-                <div>
-                    <a>BUSCAR</a>
-                </div>
-                <div>
-                    <a>BUSCA AVANÇADA</a>
+                <div class="search-field-form-btns">
+                    <div>
+                        <a>BUSCAR</a>
+                    </div>
+                    <div>
+                        <a>BUSCA AVANÇADA</a>
+                    </div>
                 </div>
             </div>
         </section>
