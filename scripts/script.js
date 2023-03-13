@@ -8,7 +8,7 @@ function toggleSidebar() {
     if (showSidebar) {
         navigationHeader.style.marginLeft = '0vw';
         navigationHeader.style.animationName = 'showSidebar';
-        content.style.filter = 'blur(2px)';
+        content.style.filter = 'blur(1px)';
     }
     else {
         navigationHeader.style.marginLeft = '-100vw';
