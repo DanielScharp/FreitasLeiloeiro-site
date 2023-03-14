@@ -74,16 +74,16 @@
 
             <div id="slider-thumb">
                 <div class="content-thumb">
-                    <img src="img/default.jpg" class="img-thumb" data-tipo="veiculos" />
+                    <img src="img/slider-veiculo-1.jpg" class="img-thumb" data-tipo="veiculos" />
                 </div>
                 <div  class="content-thumb">
-                    <img src="img/default.jpg" class="img-thumb" data-tipo="imoveis" />
+                    <img src="img/slider-imovel-1.jpg" class="img-thumb" data-tipo="imoveis" />
                 </div>
                 <div class="content-thumb">
-                    <img src="img/default.jpg" class="img-thumb" data-tipo="bens" />
+                    <img src="img/slider-bem-1.jpg" class="img-thumb" data-tipo="bens" />
                 </div>
                 <div class="content-thumb">
-                    <img src="img/default.jpg" class="img-thumb" data-tipo="judicial" />
+                    <img src="img/slider-judicial-1.jpg" class="img-thumb" data-tipo="judicial" />
                 </div>
             </div>
 
@@ -126,14 +126,14 @@
         })
 
         let getSlider = function(tipo) {
-            $.get( 'http://127.0.0.1:5500/ajax/_slider_' + tipo + '.html', function( data ) {
+            $.get( 'http://s3/Content/Html/Slider/ajax/_slider_' + tipo + '.html', function( data ) {
                 $('#slider-banner').html(data);
             });
         }
 
 
         let getThumb = function(tipo) {
-            $.get( 'http://127.0.0.1:5500/ajax/_slider_' + tipo + '.html', function( data ) {
+            $.get( 'http://s3/Content/Html/Slider/ajax/_slider_' + tipo + '.html', function( data ) {
                 let element = $(data).find('.active').children();
                 let thumb = document.querySelector('[data-tipo="' + tipo + '"]');
                 thumb.src = element[0].src;
