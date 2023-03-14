@@ -3,12 +3,11 @@
 }
 
 .header-banner {
-    width: 100%;
-}
-
-.header-banner img{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 280px;
+    background-image: url('../images/Banner.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .content {
@@ -124,6 +123,12 @@
     .search-field {
         bottom: -100px;
     }
+
+    
+    .header-banner {
+        height: 250px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -169,10 +174,43 @@
         padding: 5px 0;
         font-size: 0.8rem;
     }
-
+    
+    .header-banner {
+        height: 200px;
+    }
 }
 
+@media screen and (max-width: 635px) {
+    .header-banner {
+        height: 150px;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .header-banner {
+        height: 150px;
+    }
+    
+    .search-field-form {
+        margin-top: 10px;
+    }
+    .search-field-link {
+        display: flex;
+        justify-content: center;
+    }
+        
+    .search-field-link a{
+        font-size: 0.8rem;
+        padding: 5px ;
+
+    }
+        
+    .search-field-link a.select{
+        font-size: 0.8rem;
+        padding: 5px ;
+
+    }
+}
 /*
 320px — 480px: dispositivos móveis
 481px — 768px: iPads, tablets
