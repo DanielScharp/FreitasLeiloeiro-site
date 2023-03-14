@@ -5,28 +5,29 @@ var showSidebar = false;
 
 function toggleSidebar() {
     showSidebar = !showSidebar;
-    if (showSidebar) {
+    if (!showSidebar) {
         navigationHeader.style.marginLeft = '0vw';
-        navigationHeader.style.animationName = 'showSidebar';
-        content.style.filter = 'blur(1px)';
     }
     else {
         navigationHeader.style.marginLeft = '-100vw';
-        navigationHeader.style.animationName = 'disappearSidebar';
-        content.style.filter = '';
+
     }
 }
 
 function closeSidebar() {
-    if (showSidebar) {
+    if (!showSidebar) {
         showSidebar = true;
         toggleSidebar();
     }
 }
 
 window.addEventListener('resize', function (event) {
-    if (window.innerWidth > 768 && showSidebar) {
+    if (window.innerWidth > 768) {
         showSidebar = true;
+        toggleSidebar();
+    }
+    if (window.innerWidth < 768) {
+        showSidebar = false;
         toggleSidebar();
     }
 });

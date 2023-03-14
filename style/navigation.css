@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     background: #fff;
-    z-index: 2;
+    z-index: 4;
 }
 .navigation{
 
@@ -71,7 +71,7 @@
 }
 
 .navigation .btnAreaCliente:hover {
-    color: var(--gray);
+    color: var(--white);
     background: rgb(29,119,138);
     background: linear-gradient(0deg, rgba(44,154,177,1) 0%, rgba(44,154,177,1) 52%, rgba(29,119,138,1) 52%, rgba(29,119,138,1) 100%);
 }
