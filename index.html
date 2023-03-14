@@ -76,25 +76,37 @@
     </style>
 </head>
 <body>
-    <nav class="navigation" id="navigation">
-        <button onclick="toggleSidebar()" class="btn_icon_header">
-            <i class="fa fa-bars fa-2x"></i>
-        </button>
-        <div class="logo_header">
-            <img src="./images/Logo-Freitas.png" class="img_logo_header" />
-        </div>
-        <div class="navigation_header" id="navigation_header">
-            <button onclick="toggleSidebar()" class="btnClose_icon_header">
-                &times;
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="container-fluid">
+            <img src="./images/Logo-Freitas.png" class="img_logo_header d-sm-block d-md-none" />
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="menu-links">
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#">AGENDA</a></li>
-                <li><a href="#">CADASTRO</a></li>
-                <li><a href="#">CONTATO</a></li>
-                <li><a href="#">SERVIÇOS</a></li>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+              <img src="./images/Logo-Freitas.png" class="img_logo_header d-none d-md-block" />
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active mx-1 px-4" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-1 px-1" href="#">AGENDA</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-1 px-1" href="#">CADASTRO</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-1 px-1" href="#">CONTATO</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-1 px-1" href="#">SERVIÇOS</a>
+              </li>
+
             </ul>
-            <a href="#"  class="btnAreaCliente-link-responsivo">
+            <a href="#"  class="btnAreaCliente-link">
                 <div class="btnAreaCliente">
                     <div class="btnAreaCliente-icon">
                         <i class="fa-solid fa-user"></i>
@@ -104,18 +116,52 @@
                     </div>
                 </div>
             </a>
+          </div>
         </div>
-        <a href="#"  class="btnAreaCliente-link">
-            <div class="btnAreaCliente">
-                <div class="btnAreaCliente-icon">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="btnAreaCliente-text">
-                    Área do cliente
-                </div>
-            </div>
-        </a>
-    </nav>
+      </nav>
+      <!--
+
+          <nav class="navigation" id="navigation">
+              <button onclick="toggleSidebar()" class="btn_icon_header">
+                  <i class="fa fa-bars fa-2x"></i>
+              </button>
+              <div class="logo_header">
+                  <img src="./images/Logo-Freitas.png" class="img_logo_header" />
+              </div>
+              <div class="navigation_header" id="navigation_header">
+                  <button onclick="toggleSidebar()" class="btnClose_icon_header">
+                      &times;
+                  </button>
+                  <ul class="menu-links">
+                      <li><a href="#" class="active">HOME</a></li>
+                      <li><a href="#">AGENDA</a></li>
+                      <li><a href="#">CADASTRO</a></li>
+                      <li><a href="#">CONTATO</a></li>
+                      <li><a href="#">SERVIÇOS</a></li>
+                  </ul>
+                  <a href="#"  class="btnAreaCliente-link-responsivo">
+                      <div class="btnAreaCliente">
+                          <div class="btnAreaCliente-icon">
+                              <i class="fa-solid fa-user"></i>
+                          </div>
+                          <div class="btnAreaCliente-text">
+                              Área do cliente
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              <a href="#"  class="btnAreaCliente-link">
+                  <div class="btnAreaCliente">
+                      <div class="btnAreaCliente-icon">
+                          <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="btnAreaCliente-text">
+                          Área do cliente
+                      </div>
+                  </div>
+              </a>
+          </nav>
+      -->
     <section tabindex="0" class="content" onfocus="closeSidebar()" id="content">
         <div class="header-banner" >
         </div>
@@ -183,6 +229,8 @@
 <script src="./scripts/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 <script>
 
     $(document).ready(function(){
